@@ -64,8 +64,7 @@
                                         <?php the_content(); ?>
                                 </p>
                             </div>
-                        </div>
-
+                        </div>                 
                     </div>
                 </div>    
         <?php
@@ -129,6 +128,19 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>    
+    <div class="container pagination">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <?php
+                    the_posts_pagination(array(
+                        "sreen_render_text" => "",
+                        "prev_text" => "New Posts",
+                        "next_text" => "Old Posts"
+                    ));
+                ?>
             </div>
         </div>
     </div>
